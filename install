@@ -1,0 +1,3 @@
+echo Sudo needed!
+sudo cp * /usr/share/web-greeter/themes/lock-theme
+echo done!
