@@ -86,10 +86,8 @@ button:hover {
 	cursor: pointer;
 }
 input {
-	margin-top: 50px;
 	font-size: 50px;
 	width: 80%;
-	margin-bottom: 50px;
 	background-color: black;
 	border: none;
 	color: white;
@@ -97,10 +95,8 @@ input {
 	outline: none;
 }
 input:focus {
-	margin-top: 50px;
 	font-size: 50px;
 	width: 80%;
-	margin-bottom: 50px;
 	background-color: black;
 	color: white;
 	border-bottom: rgb(9, 150, 231);
@@ -136,4 +132,7 @@ body {
 	background-position: center;
     background-repeat: no-repeat;
 	background-size: 100%;
+}
+#user {
+	width: 100%;
 }

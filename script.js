@@ -48,6 +48,11 @@ function setup() {
     })
     document.querySelector("#users").appendChild(button)
   }
+  var button = document.createElement("button")
+  button.innerHTML = "Other user";
+  button.addEventListener("click", () => {
+    window.location.href = "other.html"
+  }); document.querySelector("#users").appendChild(button)
   if (lightdm.has_guest_account) {
     var button = document.createElement("button")
     button.innerHTML = "Guest session";
@@ -61,5 +66,6 @@ function setup() {
   button.addEventListener("click", () => {
     window.location.href = "shutdown.html"
   }); document.querySelector("#users").appendChild(button)
+
 }
 window.addEventListener("GreeterReady", setup);
