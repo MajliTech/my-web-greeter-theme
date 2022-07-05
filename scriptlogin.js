@@ -13,7 +13,7 @@ gup = (key) => {
 lightdm.authentication_complete.connect(() => {
   if (lightdm.is_authenticated) {
   document.querySelector("#login").style="background-color:green";
-  setTimeout(() => {lightdm.start_session("pantheon");},500)} else {
+  setTimeout(() => {lightdm.start_session(lightdm.sessions[0].key);},500)} else {
     document.querySelector("#login").style="background-color:red";
   }
 })
